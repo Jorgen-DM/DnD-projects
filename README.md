@@ -1,8 +1,9 @@
 # D&D-projects
 
-Her finner du filer til en nettside med D&D tema. 
+
 
 # Hvordan finner du fram?
 
-1. Index.html inneholder all html kode
-2. Style.css inneholder all css styling. 
+Alle filer er flytte til test-branch. 
+Trykk på branch-knappen lenger opp på siden, og velg test-branch. 
+Nye filer som er i testfasen / ikke ferdige filer legges inn i test-branch.
