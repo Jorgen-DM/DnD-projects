@@ -27,3 +27,21 @@
     color:green;
     transition: ease 1s;
 }
+
+.TraitsHl{
+    position: relative;
+    top: -530px;
+    left: 260px;
+}
+
+.TraitsDg{
+    position: relative;
+    top: -530px;
+    left: 260px;
+}
+
+.TraitsDg2{
+    position: relative;
+    top: -545px;
+    left: 260px;
+}
