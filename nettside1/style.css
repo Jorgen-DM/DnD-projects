@@ -1,3 +1,47 @@
+/*styling for container som inneholder alle img-textbox*/
+*{
+    box-sizing: unset;
+}
+.container{
+    width: 50% !important;
+    margin: auto !important;
+    position: relative !important;
+}
+.img-textbox{
+    padding:10px;
+    margin-top: 15px;
+}
+
+.textbox{
+    width: 40%;
+    position: relative;
+    float: right;
+    margin-right: 10rem;
+    margin: auto;
+}
+/*bildestyling*/
+.img-textbox > img{
+    margin-top: 25px;
+    width:40%;
+    margin: 0;
+}
+
+.header{
+    max-width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.headertext{
+    padding: 15px;
+}
+.class1{
+    text-align: center;
+}
+
+.headertext{
+    text-align: center;
+}
 .read1 {
     font-size: 1.5rem;
     color: blueviolet;
