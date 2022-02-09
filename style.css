@@ -1,0 +1,19 @@
+.feats-container, .skills-container, .ability-scores{
+    width: 30%;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}
+
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
