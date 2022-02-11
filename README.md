@@ -11,5 +11,6 @@ Her finner du filer til en nettside med D&D tema.
 
 # Nettsideutkast:
 
-![image](https://user-images.githubusercontent.com/98276681/151367129-34800207-fa84-4d87-b6b2-f119defd4911.png)
+<img width="960" alt="website-beta" src="https://user-images.githubusercontent.com/98276681/153607402-983de2ac-9648-48e3-9083-e37aa6fed5d4.PNG">
+
 
