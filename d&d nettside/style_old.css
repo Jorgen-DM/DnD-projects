@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;}
+* {box-sizing: border-box;}
+
+.bg-img {
+  /* The image used as background navbar */
+  background-image: url("fantasy-img.jpg");
+
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+
+
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 0px;
+  width: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #430457;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+/*icon when on small screens*/
+.icon{
+ padding:9px !important;
+}
+
+/*animationbox*/
+.animationbox{
+  display: inline-block;
+  height: 250px;
+  background-color: #0E0B16;
+  width:50%;
+  position: absolute;
+  margin: 150px;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+.animationbox > h1{
+  padding: 20px;
+  color: #ddd;
+}
+
+.columns{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.col{
+    float: left;
+    margin: auto;
+    width: 20%;
+    padding:5px;
+    text-align: center;
+}
+
+.col > span {
+  font-size:50px;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+ /*adjust textbox on top front on smaller screens*/
+
+ .animationbox{
+  font-size: 50%;
+  width: 80%;
+  margin:20px;
+  margin-top: 150px;
+
+}
+  .animationbox > h1{
+    padding: 20px;
+    color: #ddd;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

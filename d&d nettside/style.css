@@ -1,140 +1,337 @@
-body {
-  margin: 0;
-  font-family: 'Fira Sans', sans-serif;}
-* {box-sizing: border-box;}
-
-.bg-img {
-  /* The image used as background navbar */
-  background-image: url("fantasy-img.jpg");
-
-  min-height: 500px;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*BODY*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
   
-  /* Needed to position the navbar */
-  position: relative;
+  html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  .container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+  
+    /* margin-bottom: 9.6rem; */
+  }
 
+  .hero-img-box{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      position: relative;
+  }
+  .hero-img-box > img{
+    border-radius: 10px;
+  }
+  .item-top{
+      grid-column: 1 / span 8;
+      grid-row: 1; 
+      padding-top: 20%; 
+      z-index: 1; 
+  }
+  .item-bottom{
+    grid-column: 4 / -1;
+    grid-row: 1; /* make this image be on the same row*/
+  }
+  
+  /* .grid:last-child {
+    margin-bottom: 0;
+  } */
+  
+  .grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+  }
+  
+  .grid--2-cols {
+    grid-template-columns: repeat(2, auto);
+  }
+  
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .grid--center-v {
+    align-items: center;
+  }
+  
 
-}
+/**************************/
+/* HEADER */
+/**************************/
 
-/* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 0px;
-  width: 100%;
-}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9; 
+  
+    /* Because we want header to be sticky later */
+    height: 9.6rem;
+    padding: 0 4.8rem;
+  }
+  
+  .logo {
+    height: 5.2rem;
+  }
+  
+  /**************************/
+  /* NAVIGATION */
+  /**************************/
+  
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+  
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    color: #cf711f;
+  }
+  
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #e67e22;
+  }
+  
+  .main-nav-link.nav-cta:hover,
+  .main-nav-link.nav-cta:active {
+    background-color: #cf711f;
+  }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
+  .heading-primary{
+    font-size: 4.2rem;
+  }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-}
+  /* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #430457;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
   display: none;
 }
 
-
-/*icon when on small screens*/
-.icon{
- padding:9px !important;
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
 }
 
-/*animationbox*/
-.animationbox{
-  display: inline-block;
-  height: 250px;
-  background-color: #0E0B16;
-  width:50%;
-  position: absolute;
-  margin: 150px;
-  border-radius: 15px;
-  opacity: 0.9;
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+  
+  /**************************/
+  /* HERO SECTION */
+  /**************************/
+  
+  .section-hero {
+    background-color: #fdf2e9;
+    padding: 4.8rem 0 9.6rem 0;
+  }
+  
+  .hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+  }
+  
+  .hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  }
+  
+  .hero-img {
+    width: 100%;
+  }
+  
+  .delivered-meals {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+  }
+  
+  .delivered-imgs {
+    display: flex;
+  }
+  
+  .delivered-imgs img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #fdf2e9;
+  }
+  
+  .delivered-imgs img:last-child {
+    margin: 0;
+  }
+  
+  .delivered-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .delivered-text span {
+    color: #cf711f;
+    font-weight: 700;
+  }
+
+.btn-header{
+  margin: 10px;
+  padding: 10px;
+  background-color: #e67e22;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fdf2e9;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.animationbox > h1{
-  padding: 20px;
+.btn-header:hover{
+  background-color: #b6631a;
+}
+
+/* HOW IT WORKS SECTION */
+/**************************/
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
   color: #ddd;
+  margin-bottom: 1.2rem;
 }
 
-.columns{
-  width: 100%;
-  margin-top: 50px;
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 
-.col{
-    float: left;
-    margin: auto;
-    width: 20%;
-    padding:5px;
-    text-align: center;
+.step-img-box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.col > span {
-  font-size:50px;
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
- /*adjust textbox on top front on smaller screens*/
+.step-img-box::before {
+  width: 60%;
+  /* height: 60%; */
 
- .animationbox{
-  font-size: 50%;
-  width: 80%;
-  margin:20px;
-  margin-top: 150px;
+  /* 60% of parent's width */
+  padding-bottom: 60%;
 
-}
-  .animationbox > h1{
-    padding: 20px;
-    color: #ddd;
-  }
+  background-color: #fdf2e9;
+  z-index: -2;
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
 }
+
+.step-img {
+  width: 35%;
+  /* z-index: 10; */
+}
+
+/********************/
+/* FOOTER SECTION */
+section.footer.grid--4-cols {
+  width: 70%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.footer-paragraph {
+  display: inline-block;
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 2rem;
+  vertical-align: top;
+}
+
+.footer-header{
+  margin: 5px;
+  border-bottom: 1px solid;
+}
+
+.footer-text {
+  line-height: 50px;
+}
+
+.credits p{
+  font-size: 1.5rem;
+}
+
+
+
+  
