@@ -1,0 +1,110 @@
+/*styling for container som inneholder alle img-textbox*/
+*{
+    box-sizing: unset;
+}
+.container{
+    width: 50% !important;
+    margin: auto !important;
+    position: relative !important;
+}
+.img-textbox{
+    padding:10px;
+    margin-top: 15px;
+}
+
+.textbox{
+    width: 40%;
+    position: relative;
+    float: right;
+    margin-right: 10rem;
+    margin: auto;
+}
+/*bildestyling*/
+.img-textbox > img{
+    margin-top: 25px;
+    width:40%;
+    margin: 0;
+}
+
+.header{
+    max-width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.headertext{
+    padding: 15px;
+}
+.class1{
+    text-align: center;
+}
+
+.headertext{
+    text-align: center;
+}
+.read1 {
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+.read1:hover {
+    color:green;
+    transition: ease 1s;
+}
+
+.read2 {
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+.read2:hover {
+    color:green;
+    transition: ease 1s;
+}
+
+.read3 {
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+.read3:hover {
+    color:green;
+    transition: ease 1s;
+}
+
+.read4 {
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+.read4:hover {
+    color:green;
+    transition: ease 1s;
+}
+
+.TraitsHl{
+    position: relative;
+    top: -530px;
+    left: 260px;
+}
+
+.TraitsDg{
+    position: relative;
+    top: -530px;
+    left: 260px;
+}
+
+.TraitsDg2{
+    position: relative;
+    top: -545px;
+    left: 260px;
+}
+
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 50px;
+    font-size: 20px;
+  }

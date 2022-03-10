@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+body{
+background-color:black;
+color:white;
+}
+</style>
+<body>
+
+<h1>Guide Races In D&D 5e</h1>
+<p>This is a short guide to races in D&D 5e. There are many different races in D&D, in this short guide im going to list what they do, and what classes they are good to pair them with.</p>
+
+<h2>Halflings</h2>
+<img src="https://5elanguages.website/wp-content/uploads/2020/04/halfling-5e-languagews.png" alt="Halfling 5e (5th Edition) language in D&amp;amp;D Languages" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 315px; height: 350px; margin: 0px;">
+<br>
+
+<a href="kode2.html"> Read More</a>
+<br>
+
+
+
+<h2>Dragonborn</h2>
+<img src="https://www.dndbeyond.com/avatars/thumbnails/6/340/420/618/636272677995471928.png" alt="The Dragonborn Race for Dungeons &amp;amp; Dragons (D&amp;amp;D) Fifth Edition (5e) - D&amp;amp;D  Beyond" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 297.209px; height: 426px; margin: 0px;">
+<br>
+
+<a href=" "> Read More</a>
+<br>
+
+
+
+
+<h2>Half-Elf</h2>
+<img src="https://www.dndbeyond.com/avatars/thumbnails/6/481/420/618/636274618102950794.png" alt="The Half-Elf Race for Dungeons &amp;amp; Dragons (D&amp;amp;D) Fifth Edition (5e) - D&amp;amp;D  Beyond" jsname="HiaYvf" jsaction="load:XAeZkd;" class="n3VNCb" data-noaft="1" style="width: 290.665px; height: 427px; margin: 0px;">
+<br>
+
+<a href=" "> Read More</a>
+<br>
+
+</body>
+</html>
